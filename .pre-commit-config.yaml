@@ -17,3 +17,5 @@ repos:
     -   id: ruff
         args: [--fix]
     -   id: ruff-format
+
+exclude: .*/tests/data/.*\.html$

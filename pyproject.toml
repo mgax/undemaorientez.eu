@@ -12,3 +12,4 @@ dependencies = [
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "oscraper.settings"
+log_cli_level = "DEBUG"
