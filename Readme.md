@@ -24,6 +24,12 @@ To set up pre-commit hooks (automatically enforces code quality and style standa
 pre-commit install
 ```
 
+To add new dependencies:
+
+```bash
+uv add <package-name>
+```
+
 To update dependencies:
 
 ```bash
