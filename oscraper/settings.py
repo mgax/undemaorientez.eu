@@ -2,6 +2,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SCRAPER_REPO_PATH = BASE_DIR / "data" / "scraped"
+EVENTS_URL = "http://www.orienteering.ro/welcomeROM.html"
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
