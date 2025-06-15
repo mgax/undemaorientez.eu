@@ -18,6 +18,12 @@ uv sync
 
 ## Development
 
+To set up pre-commit hooks (automatically enforces code quality and style standards):
+
+```bash
+pre-commit install
+```
+
 To update dependencies:
 
 ```bash
