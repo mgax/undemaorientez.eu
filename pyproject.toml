@@ -7,3 +7,6 @@ dependencies = [
     "Django==5.2",
     "requests",
 ]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "oscraper.settings"

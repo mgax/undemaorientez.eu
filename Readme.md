@@ -36,3 +36,9 @@ To update dependencies:
 # Update lock file
 uv lock
 ```
+
+Run tests with:
+
+```bash
+pytest
+```
