@@ -1,17 +1,137 @@
 [
-  "Cupa Romaniei 2025+ SU4 (Polovragi, FRO, 13-15.06.2025)",
-  "Roza Vanturilor 2025 et. 6 (Poiana Brasov, CS Babarunca, 21.06.2025)",
-  "Roza Vanturilor MTBO et.2 (Poiana Brasov, CS Babarunca, 22.06.2025)",
-  "Carpath Rogaining Trophy 2025 (Baile Danesti, Babarunca+VSK+Rogaining, 28.06.2025)",
-  "Trofeul Apuseni - Padis 2025 (Padis+Stei, EcoSport, 04-06.07.2025)",
-  "Festivalul de Orientare al Bihorului 2025 (Sannicolau de Munte, CSO Madaras, 11-13.07.2025)",
-  "Karpat Kup 2025 (Baisoara, CSM Rupicapra, 19-20.07.2025)",
-  "Cupa Borsec 2025 (Borsec, CS Babarunca, 19-20.07.2025)",
-  "CN MTBO Sprint+LD+MD 2025 (VSK+FRO, 25-27.07.2025)",
-  "Curs Trasator 2025 (Comarnic, FRO + Federația Franceză de Orientare, 29.07.-01.08.2025)",
-  "Carpathian Orienteering Trophy 2025 + CN MD+LD+St+Spr (Comarnic, FRO+CS Metropolitan Bucuresti, 20-24.08.2025) 3 WRE",
-  "Cluj-West Open 2025 - Trofeul Floresti ed. 23 (Pădurea Lomb Popești, CSO Dudu Floresti, 13-14.09.2025)",
-  "Mentor Silva Cup 2025- 7 Legs Mixed Relay + SU5 (Curtea de Arges, Mentor Silva, 19-21.09.2025) 2 WRE",
-  "CN Noape + SU7 + St. Mixta + (Zalau, CS Pro-Silva Zalau, 04-05.10.2025)",
-  "Brasov O-Meeting + SU8 (Brasov, CS Babarunca, 10-12.10.2025) 2 WRE"
+  {
+    "text": "Cupa Romaniei 2025+ SU4 (Polovragi, FRO, 13-15.06.2025)",
+    "name": "Cupa Romaniei 2025+ SU4",
+    "organiser": "FRO",
+    "location": "Polovragi",
+    "start_date": "2025-06-13",
+    "end_date": "2025-06-15",
+    "wre_count": 0
+  },
+  {
+    "text": "Roza Vanturilor 2025 et. 6 (Poiana Brasov, CS Babarunca, 21.06.2025)",
+    "name": "Roza Vanturilor 2025 et. 6",
+    "organiser": "CS Babarunca",
+    "location": "Poiana Brasov",
+    "start_date": "2025-06-21",
+    "end_date": "2025-06-21",
+    "wre_count": 0
+  },
+  {
+    "text": "Roza Vanturilor MTBO et.2 (Poiana Brasov, CS Babarunca, 22.06.2025)",
+    "name": "Roza Vanturilor MTBO et.2",
+    "organiser": "CS Babarunca",
+    "location": "Poiana Brasov",
+    "start_date": "2025-06-22",
+    "end_date": "2025-06-22",
+    "wre_count": 0
+  },
+  {
+    "text": "Carpath Rogaining Trophy 2025 (Baile Danesti, Babarunca+VSK+Rogaining, 28.06.2025)",
+    "name": "Carpath Rogaining Trophy 2025",
+    "organiser": "Babarunca+VSK+Rogaining",
+    "location": "Baile Danesti",
+    "start_date": "2025-06-28",
+    "end_date": "2025-06-28",
+    "wre_count": 0
+  },
+  {
+    "text": "Trofeul Apuseni - Padis 2025 (Padis+Stei, EcoSport, 04-06.07.2025)",
+    "name": "Trofeul Apuseni - Padis 2025",
+    "organiser": "EcoSport",
+    "location": "Padis+Stei",
+    "start_date": "2025-07-04",
+    "end_date": "2025-07-06",
+    "wre_count": 0
+  },
+  {
+    "text": "Festivalul de Orientare al Bihorului 2025 (Sannicolau de Munte, CSO Madaras, 11-13.07.2025)",
+    "name": "Festivalul de Orientare al Bihorului 2025",
+    "organiser": "CSO Madaras",
+    "location": "Sannicolau de Munte",
+    "start_date": "2025-07-11",
+    "end_date": "2025-07-13",
+    "wre_count": 0
+  },
+  {
+    "text": "Karpat Kup 2025 (Baisoara, CSM Rupicapra, 19-20.07.2025)",
+    "name": "Karpat Kup 2025",
+    "organiser": "CSM Rupicapra",
+    "location": "Baisoara",
+    "start_date": "2025-07-19",
+    "end_date": "2025-07-20",
+    "wre_count": 0
+  },
+  {
+    "text": "Cupa Borsec 2025 (Borsec, CS Babarunca, 19-20.07.2025)",
+    "name": "Cupa Borsec 2025",
+    "organiser": "CS Babarunca",
+    "location": "Borsec",
+    "start_date": "2025-07-19",
+    "end_date": "2025-07-20",
+    "wre_count": 0
+  },
+  {
+    "text": "CN MTBO Sprint+LD+MD 2025 (VSK+FRO, 25-27.07.2025)",
+    "name": "CN MTBO Sprint+LD+MD 2025",
+    "organiser": "VSK+FRO",
+    "location": null,
+    "start_date": "2025-07-25",
+    "end_date": "2025-07-27",
+    "wre_count": 0
+  },
+  {
+    "text": "Curs Trasator 2025 (Comarnic, FRO + Federația Franceză de Orientare, 29.07.-01.08.2025)",
+    "name": "Curs Trasator 2025",
+    "organiser": "FRO + Federația Franceză de Orientare",
+    "location": "Comarnic",
+    "start_date": "2025-07-29",
+    "end_date": "2025-08-01",
+    "wre_count": 0
+  },
+  {
+    "text": "Carpathian Orienteering Trophy 2025 + CN MD+LD+St+Spr (Comarnic, FRO+CS Metropolitan Bucuresti, 20-24.08.2025) 3 WRE",
+    "name": "Carpathian Orienteering Trophy 2025 + CN MD+LD+St+Spr",
+    "organiser": "FRO+CS Metropolitan Bucuresti",
+    "location": "Comarnic",
+    "start_date": "2025-08-20",
+    "end_date": "2025-08-24",
+    "wre_count": 3
+  },
+  {
+    "text": "Cluj-West Open 2025 - Trofeul Floresti ed. 23 (Pădurea Lomb Popești, CSO Dudu Floresti, 13-14.09.2025)",
+    "name": "Cluj-West Open 2025 - Trofeul Floresti ed. 23",
+    "organiser": "CSO Dudu Floresti",
+    "location": "Pădurea Lomb Popești",
+    "start_date": "2025-09-13",
+    "end_date": "2025-09-14",
+    "wre_count": 0
+  },
+  {
+    "text": "Mentor Silva Cup 2025- 7 Legs Mixed Relay + SU5 (Curtea de Arges, Mentor Silva, 19-21.09.2025) 2 WRE",
+    "name": "Mentor Silva Cup 2025- 7 Legs Mixed Relay + SU5",
+    "organiser": "Mentor Silva",
+    "location": "Curtea de Arges",
+    "start_date": "2025-09-19",
+    "end_date": "2025-09-21",
+    "wre_count": 2
+  },
+  {
+    "text": "CN Noape + SU7 + St. Mixta + (Zalau, CS Pro-Silva Zalau, 04-05.10.2025)",
+    "name": "CN Noape + SU7 + St. Mixta +",
+    "organiser": "CS Pro-Silva Zalau",
+    "location": "Zalau",
+    "start_date": "2025-10-04",
+    "end_date": "2025-10-05",
+    "wre_count": 0
+  },
+  {
+    "text": "Brasov O-Meeting + SU8 (Brasov, CS Babarunca, 10-12.10.2025) 2 WRE",
+    "name": "Brasov O-Meeting + SU8",
+    "organiser": "CS Babarunca",
+    "location": "Brasov",
+    "start_date": "2025-10-10",
+    "end_date": "2025-10-12",
+    "wre_count": 2
+  }
 ]
