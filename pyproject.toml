@@ -4,6 +4,7 @@ version = "0.0.0"
 description = "A tool that scrapes orienteering.ro for events"
 requires-python = ">=3.13"
 dependencies = [
+    "beautifulsoup4>=4.13.4",
     "Django==5.2",
     "requests",
 ]
