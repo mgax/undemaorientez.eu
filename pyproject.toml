@@ -1,0 +1,8 @@
+[project]
+name = "oscraper"
+version = "0.0.0"
+description = "A tool that scrapes orienteering.ro for events"
+requires-python = ">=3.13"
+dependencies = [
+    "Django==5.2",
+]
