@@ -7,8 +7,8 @@ SCRAPER_REPO_PATH = BASE_DIR / "data" / "scraped"
 EVENTS_URL = "http://www.orienteering.ro/welcomeROM.html"
 
 OSCRAPER_BASE_URL = os.environ.get("OSCRAPER_BASE_URL", "http://example.com")
-
-DEBUG = True
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+DEBUG = os.environ.get("DJANGO_DEBUG", "").lower() in ["1", "yes", "y", "true"]
 
 ALLOWED_HOSTS = []
 
@@ -20,6 +20,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "oscraper.scraper",
+    "wagtail.sites",
+    "wagtail.users",
+    "wagtail.admin",
+    "wagtail.documents",
+    "wagtail.images",
+    "wagtail",
+    "modelcluster",
+    "taggit",
 ]
 
 MIDDLEWARE = [
@@ -69,3 +77,6 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+WAGTAIL_SITE_NAME = "OScraper"
+WAGTAILADMIN_BASE_URL = os.environ.get("WAGTAILADMIN_BASE_URL", "http://localhost:8000")
