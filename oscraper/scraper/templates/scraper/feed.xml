@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Romanian Orienteering Events</title>
+  <link href="{{ settings.OSCRAPER_BASE_URL }}feed.xml" rel="self" />
+  <updated>{{ now }}</updated>
+  <id>{{ settings.OSCRAPER_BASE_URL }}feed.xml</id>
+  <author>
+    <name>Romanian Orienteering Federation</name>
+  </author>
+  {% for event in events %}
+  {% with event_id=event.name|slugify %}
+  <entry>
+    <title>{{ event.name }}</title>
+    <link href="{{ settings.OSCRAPER_BASE_URL }}#{{ event_id }}" />
+    <id>{{ settings.OSCRAPER_BASE_URL }}#{{ event_id }}</id>
+    <updated>{{ event.start_date|date:"c" }}</updated>
+    <summary type="html">
+      <![CDATA[
+      {% if event.location %}<strong>{{ event.location }}</strong>{% endif %}
+      {{ event.organiser }}
+      {{ event.start_date|date:"j F Y" }}{% if event.end_date != event.start_date %} - {{ event.end_date|date:"j F Y" }}{% endif %}
+      ]]>
+    </summary>
+    <content type="html">
+      <![CDATA[
+      <p>{{ event.start_date|date:"j F Y" }}{% if event.end_date != event.start_date %} - {{ event.end_date|date:"j F Y" }}{% endif %}</p>
+      <p><strong>Locație:</strong> {{ event.location|default:"TBD" }}</p>
+      <p><strong>Organizator:</strong> {{ event.organiser }}</p>
+      ]]>
+    </content>
+  </entry>
+  {% endwith %}
+  {% endfor %}
+</feed>
