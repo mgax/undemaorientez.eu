@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "oscraper.scraper",
+    "oscraper.cms",
     "wagtail.sites",
     "wagtail.users",
     "wagtail.admin",
