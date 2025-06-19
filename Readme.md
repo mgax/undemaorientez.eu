@@ -61,6 +61,38 @@ The site will be available at:
 - **Wagtail admin**: http://localhost:8000/admin/
 - **Django admin**: http://localhost:8000/django-admin/
 
+## Management Commands
+
+The project includes several Django management commands for scraping and processing orienteering events:
+
+### Scraping Commands
+
+- **`fetch_events`**: Downloads the events page from orienteering.ro and saves it to the local repository
+  ```bash
+  uv run manage.py fetch_events
+  ```
+
+- **`extract_events`**: Parses the scraped HTML file and extracts event information as JSON
+  ```bash
+  uv run manage.py extract_events
+  ```
+  Use `-v` for debug output or `-v3` for detailed debugging.
+
+### CMS Commands
+
+- **`import_events`**: Creates draft Event pages in the Wagtail CMS from scraped events
+  ```bash
+  uv run manage.py import_events
+  ```
+  This command skips events that already exist (based on original text).
+
+### Feed Generation
+
+- **`generate_feed`**: Generates an Atom RSS feed from the extracted events
+  ```bash
+  uv run manage.py generate_feed
+  ```
+
 ## Development
 
 To set up pre-commit hooks (automatically enforces code quality and style standards):
