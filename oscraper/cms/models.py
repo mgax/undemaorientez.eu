@@ -4,6 +4,7 @@ from django.utils.formats import date_format
 from wagtail.models import Page
 from wagtail.fields import RichTextField
 from wagtail.admin.panels import FieldPanel
+from wagtail_newsletter.models import NewsletterPageMixin
 
 
 class HomePage(Page):
@@ -25,7 +26,7 @@ class HomePage(Page):
         )
 
 
-class Event(Page):
+class Event(NewsletterPageMixin, Page):
     organiser = models.CharField(max_length=1000)
     location = models.CharField(max_length=1000, blank=True)
     start_date = models.DateField()
@@ -45,3 +46,5 @@ class Event(Page):
         if self.start_date == self.end_date:
             return date_format(self.start_date)
         return f"{date_format(self.start_date)} - {date_format(self.end_date)}"
+
+    newsletter_template = "cms/event_newsletter_email.html"

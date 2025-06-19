@@ -1,0 +1,43 @@
+{% load wagtail_newsletter %}
+
+{% mrml %}
+<mjml>
+  <mj-head>
+    <mj-title>{{ page.title }} - Eveniment de orientare</mj-title>
+    <mj-preview>{{ page.title }} - {{ page.date_range }}</mj-preview>
+    <mj-attributes>
+      <mj-section padding="5px 0" />
+      <mj-text padding="5px 0" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="22px" color="#d97706" font-family="helvetica">
+          <h1>{{ page.title }}</h1>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="16px" color="#374151" font-family="helvetica">
+          <p><strong>Data:</strong> {{ page.date_range }}</p>
+          <p><strong>Organizator:</strong> {{ page.organiser }}</p>
+          {% if page.location %}
+          <p><strong>Locația:</strong> {{ page.location }}</p>
+          {% endif %}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="12px" color="#6b7280" font-family="helvetica">
+          <p>Ai primit acest email pentru că ești abonat la notificări despre evenimente de orientare.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+{% endmrml %}
