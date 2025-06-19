@@ -248,6 +248,43 @@ wheels = [
 ]
 
 [[package]]
+name = "mailchimp-marketing"
+version = "3.0.80"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "python-dateutil" },
+    { name = "requests" },
+    { name = "six" },
+    { name = "urllib3" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/22/a0/bf3a0d0c237eee255a02ee9a75fc60cabff2ec8264c4f715c4e647ba2466/mailchimp_marketing-3.0.80-py3-none-any.whl", hash = "sha256:a5bcb3ebd3be60908c65af765f8195724e6fd2d61ecf6da667a794c5bc7b84d3", size = 109565, upload-time = "2022-11-02T19:20:25.306Z" },
+]
+
+[[package]]
+name = "mrml"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/12/ee/305cfad90f41fff3b9823dc4c5fa8e553d611163256ba6a44627fb3628b0/mrml-0.2.0.tar.gz", hash = "sha256:97e8eb99d6e42821a020bdc76a7415fb714a2d8b8a8c5c22803dcd5a809f2edd", size = 134540, upload-time = "2025-03-01T20:04:26.404Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/45/2a016c3d0142f204fb98716d7500b106fd44ee8b9949e1df0d43e6e7c92b/mrml-0.2.0-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:d1a5a55aed7425c59e5b77024ea3876c71a6ea62792cf4ce38eb04100fbb0a61", size = 1637385, upload-time = "2025-03-01T20:03:17.723Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/bf/d16394dd8d33a087501a6e9d5c8da3760d1e743c1a321bf713299d90a687/mrml-0.2.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:d6f09ca2076b4d1080fdf0cd1a3a2ad85faa88f64690cef13d696c3bc30d5a5b", size = 1555477, upload-time = "2025-03-01T20:03:18.841Z" },
+    { url = "https://files.pythonhosted.org/packages/c5/8f/5d8b9cd7c3041072fc58e348bcf7342bb6e742b96a4ca6004624b1d0a9ac/mrml-0.2.0-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:986b71ab1c0ff78aef6d7aaac967418083146a6003de5ca5f7275f5ded190b09", size = 1594092, upload-time = "2025-03-01T20:03:20.221Z" },
+    { url = "https://files.pythonhosted.org/packages/80/72/f11ef94939b6b161a98725864a7bca196d985eeaf455d64b77534e55bcc7/mrml-0.2.0-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:219a840471e87e4d3d5db5b9c9ff65a96410643f02994fa46b15a308c8001f54", size = 1671767, upload-time = "2025-03-01T20:03:21.521Z" },
+    { url = "https://files.pythonhosted.org/packages/db/6f/8aef4cf03c4dae3b2c806137c56b6205274e2a9a76cf27096b3ce1c4245d/mrml-0.2.0-cp313-cp313-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:eba7ae5cbc4263fa3ba94230d6c66008c33890b5372385ed6ab8951bac336771", size = 1848048, upload-time = "2025-03-01T20:03:22.823Z" },
+    { url = "https://files.pythonhosted.org/packages/99/9e/a5129eae9bc25aaaf40299dd8b854716b6fc13e8e341484942bc39979efa/mrml-0.2.0-cp313-cp313-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:df66107b0dd7556b21cd3156876f2d5389d276b70cf29b8796141b0553a9615e", size = 1849732, upload-time = "2025-03-01T20:03:24.738Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/dc/c7f1a41868fc94b8e016fb64c354e735d8b147edf15fcbe3be299b894a48/mrml-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:35233367f3ce503f87f47c04838ae8a298b5b08a212b1753e998279b09f1ab46", size = 1774084, upload-time = "2025-03-01T20:03:25.926Z" },
+    { url = "https://files.pythonhosted.org/packages/b9/ff/a122ba8445e2457971129306d56ca1d20cb1f64f64f59aa28b5fd1762db4/mrml-0.2.0-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:0b0915d8ec0964333c123d462bfd68284a3d4715971d978426e282e11d08ebb4", size = 1709154, upload-time = "2025-03-01T20:03:27.789Z" },
+    { url = "https://files.pythonhosted.org/packages/08/94/cf0e072ff85bb5293fcb3465c20f36f86a74421b4cae4c43427acd7ba914/mrml-0.2.0-cp313-cp313-win32.whl", hash = "sha256:302cbbc0846fc158d2ec6b3e7c59dad6f5a9adcd3bd9d26b2dd148d39a274711", size = 1136900, upload-time = "2025-03-01T20:03:29.518Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/b7/19b0cfdf67ec068a66870536bc489927ec25b84841cb075be3eca4acf758/mrml-0.2.0-cp313-cp313-win_amd64.whl", hash = "sha256:29d95f366dd2a55d152965ec90035b5c4a89d2f9028bd4bb2342e2f3585363e9", size = 1417896, upload-time = "2025-03-01T20:03:30.638Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/a8/5263b68198e5a3a8f141281a0702aa5be750b7dd698a20c51414bc04981c/mrml-0.2.0-cp313-cp313t-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:13159e3aa30696ac64af5176a1a75020a7097fe2338e126d2ddc734f73549a10", size = 1593220, upload-time = "2025-03-01T20:03:31.836Z" },
+    { url = "https://files.pythonhosted.org/packages/8e/4f/3fff2d1ee06e95531a572f0bc53ca844c845e741ae4d5b9f57ed7b2e4b17/mrml-0.2.0-cp313-cp313t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:f1becb9f3e278027c3d99747e30f8e8915b9569b6756028f2e824fdf35745e37", size = 1848613, upload-time = "2025-03-01T20:03:33.806Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/6f/dc2a5504979a6a75fcf2bfa7e1b26e947005554f15ba5ad2c8866d1e71ce/mrml-0.2.0-cp313-cp313t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:e7e3755fbc661115e3d7f1614230ac1c0bb9e8fdb4213d36aa1ad057f8fcf18c", size = 1852970, upload-time = "2025-03-01T20:03:35.141Z" },
+    { url = "https://files.pythonhosted.org/packages/da/b0/b9934140e42e6f4a1c139475656bc446150b7f82ff8a56f38626599e1117/mrml-0.2.0-cp313-cp313t-manylinux_2_28_aarch64.whl", hash = "sha256:55a82f3ed95d6b402e39446762f7bbeeb2a68084b82a10abe2923f0abe73259b", size = 1709350, upload-time = "2025-03-01T20:03:37.136Z" },
+]
+
+[[package]]
 name = "openpyxl"
 version = "3.1.5"
 source = { registry = "https://pypi.org/simple" }
@@ -269,6 +306,7 @@ dependencies = [
     { name = "html5lib" },
     { name = "requests" },
     { name = "wagtail" },
+    { name = "wagtail-newsletter", extra = ["mailchimp", "mrml"] },
 ]
 
 [package.metadata]
@@ -278,6 +316,7 @@ requires-dist = [
     { name = "html5lib", specifier = ">=1.1" },
     { name = "requests" },
     { name = "wagtail", specifier = ">=7.0.1,<7.1" },
+    { name = "wagtail-newsletter", extras = ["mailchimp", "mrml"], specifier = ">=0.2.2" },
 ]
 
 [[package]]
@@ -326,6 +365,30 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a1/cf/06a9e7e7c24b12f1109f26afa17f4969175ef8e0b98be8d524458914c0fb/pillow_heif-0.21.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:6724d6a2561f36b06e14e1cd396c004d32717e81528cb03565491ac8679ed760", size = 8301428, upload-time = "2024-11-29T09:07:34.669Z" },
     { url = "https://files.pythonhosted.org/packages/bf/c5/d3f8d90577085682183028ccc4cb2010d8accd0c5efab0e96146bb480acf/pillow_heif-0.21.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:bf2e2b0abad455a0896118856e82a8d5358dfe5480bedd09ddd6a04b23773899", size = 9051141, upload-time = "2024-11-29T09:07:42.724Z" },
     { url = "https://files.pythonhosted.org/packages/8b/38/4ee2ed6584b6a00cac9f805f36610691c37d58df609d221d2708e49cf23b/pillow_heif-0.21.0-cp313-cp313-win_amd64.whl", hash = "sha256:1b6ba6c3c4de739a1abf4f7fe0cdd04acd9e0c7fc661985b9a5288d94893a4b1", size = 8691151, upload-time = "2024-11-29T09:07:44.801Z" },
+]
+
+[[package]]
+name = "python-dateutil"
+version = "2.9.0.post0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432, upload-time = "2024-03-01T18:36:20.211Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892, upload-time = "2024-03-01T18:36:18.57Z" },
+]
+
+[[package]]
+name = "queryish"
+version = "0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/d2/e8df727b39fca88e0a386b3341a91042ce808c43c24c6d24aa4be861af00/queryish-0.2.tar.gz", hash = "sha256:60150be41673af3d0597f78fb5e77be0e30dc49658a83d274b2a0959c4f97c1b", size = 16081, upload-time = "2023-09-05T17:38:28.052Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/6d/309fb3afedfbb7eb688df628a61da3547f053a70d69397999d28add8bc79/queryish-0.2-py3-none-any.whl", hash = "sha256:2e460537f6b7cd5af187b78a3635e80ceec421221adb62883282d419dc170ea8", size = 9902, upload-time = "2023-09-05T17:38:26.062Z" },
 ]
 
 [[package]]
@@ -432,6 +495,28 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/30/56/f8ed6827d4b60fa57e65c872a654bc17d9aebad64a17532c64dfa29dc6f2/wagtail-7.0.1.tar.gz", hash = "sha256:cfc5c37738f98cae380a15252f5676604f6c61554bef1a3791e34de1e703beec", size = 6671934, upload-time = "2025-06-12T15:48:24.763Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/bd/431c4a8cec7d9bbcf2c4f373f5a1a0ba24eba343d83c23f71b89f804cd2f/wagtail-7.0.1-py3-none-any.whl", hash = "sha256:92439c50a919826a4ce8c85bdaf3ed0e436d29598bb2954b4fca5f312b969666", size = 9148787, upload-time = "2025-06-12T15:48:19.053Z" },
+]
+
+[[package]]
+name = "wagtail-newsletter"
+version = "0.2.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "queryish" },
+    { name = "wagtail" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/10/7c/45a1e288d8b71426012244339e7a22fb4817282ceb52bab41b03feea87c3/wagtail_newsletter-0.2.2.tar.gz", hash = "sha256:0f9b320fed186d0e02d906b7fd24606077782ffc5d64cb733b88ac142199da78", size = 20066, upload-time = "2025-04-16T18:54:56.967Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/2a/c000ad8d9e308d736f195098b478d9fd9457359da951344bfa8e2ea3e4ff/wagtail_newsletter-0.2.2-py3-none-any.whl", hash = "sha256:d3ea3f92d2d71d652f6ca74a40b9f21d96a18f342c593d5304a8d95ce3afa158", size = 23319, upload-time = "2025-04-16T18:54:55.384Z" },
+]
+
+[package.optional-dependencies]
+mailchimp = [
+    { name = "mailchimp-marketing" },
+]
+mrml = [
+    { name = "mrml" },
 ]
 
 [[package]]
