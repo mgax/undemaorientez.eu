@@ -1,0 +1,26 @@
+{% load wagtailcore_tags %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{{ page.title }}{% endblock %} - OScraper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1><a href="/">OScraper</a></h1>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>OScraper - Orienteering Events</p>
+    </footer>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

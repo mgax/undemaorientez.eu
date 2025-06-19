@@ -1,0 +1,16 @@
+{% extends "cms/base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    <div class="event-details">
+        <p><strong>Data:</strong> {{ page.date_range }}</p>
+        <p><strong>Organizator:</strong> {{ page.organiser }}</p>
+        {% if page.location %}
+            <p><strong>Locația:</strong> {{ page.location }}</p>
+        {% endif %}
+    </div>
+
+    <p><a href="/">&larr; Înapoi la evenimente</a></p>
+{% endblock %}

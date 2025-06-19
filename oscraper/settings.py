@@ -67,7 +67,7 @@ DATABASES = {
     }
 }
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ro"
 
 TIME_ZONE = "Europe/Bucharest"
 

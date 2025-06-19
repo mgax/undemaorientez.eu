@@ -1,0 +1,26 @@
+{% extends "cms/base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    {% if page.intro %}
+        <div class="intro">
+            {{ page.intro|richtext }}
+        </div>
+    {% endif %}
+
+    <h2>Evenimente</h2>
+    {% for child in page.get_future_events %}
+        <div class="event">
+            <h3><a href="{% pageurl child %}">{{ child.title }}</a></h3>
+            <p><strong>Data:</strong> {{ child.date_range }}</p>
+            <p><strong>Organizator:</strong> {{ child.organiser }}</p>
+            {% if child.location %}
+                <p><strong>Locația:</strong> {{ child.location }}</p>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p>Nu sunt evenimente disponibile.</p>
+    {% endfor %}
+{% endblock %}
