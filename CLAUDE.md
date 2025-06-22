@@ -11,3 +11,6 @@ This project is the public landing page for the https://github.com/mgax/undemaor
 ## Technical details
 
 - This branch of the https://github.com/mgax/undemaorientez.eu repo is named `site` and is the landing page hosted on GitHub Pages
+- Deployed to GitHub Pages with custom domain https://undemaorientez.eu
+- Static site with no Jekyll processing (uses .nojekyll file)
+- Domain configured via CNAME file
