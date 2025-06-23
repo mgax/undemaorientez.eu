@@ -6,14 +6,22 @@
     <mj-title>{{ page.title }} - Eveniment de orientare</mj-title>
     <mj-preview>{{ page.title }} - {{ page.date_range }}</mj-preview>
     <mj-attributes>
-      <mj-section padding="5px 0" />
-      <mj-text padding="5px 0" />
+      <mj-section padding="0 20px" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+      <mj-text padding="0" font-size="16px" color="#374151" font-family="helvetica" />
     </mj-attributes>
   </mj-head>
   <mj-body>
     <mj-section>
       <mj-column>
-        <mj-text font-size="22px" color="#d97706" font-family="helvetica">
+        <mj-image src="https://undemaorientez.eu/email-assets/hero-image-1.jpg" alt="Unde ma orientez" width="600px" padding-top="20px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text color="#d97706">
           <h1>{{ page.title }}</h1>
         </mj-text>
       </mj-column>
@@ -21,20 +29,29 @@
 
     <mj-section>
       <mj-column>
-        <mj-text font-size="16px" color="#374151" font-family="helvetica">
+        <mj-text>
           <p><strong>Data:</strong> {{ page.date_range }}</p>
+          <p><strong>Locația:</strong> {% if page.location %}{{ page.location }}{% else %}urmează să fie anunțată{% endif %}</p>
           <p><strong>Organizator:</strong> {{ page.organiser }}</p>
-          {% if page.location %}
-          <p><strong>Locația:</strong> {{ page.location }}</p>
-          {% endif %}
         </mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section>
       <mj-column>
-        <mj-text font-size="12px" color="#6b7280" font-family="helvetica">
-          <p>Ai primit acest email pentru că ești abonat la notificări despre evenimente de orientare.</p>
+        <mj-text>
+          <p>Pentru detalii mergi la <a href="http://orienteering.ro" style="color: #B8471A;">orienteering.ro</a>.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="12px" color="#6b7280">
+          <p>
+            Primești acest email pentru că te-ai abonat la notificările de la
+            <a href="https://undemaorientez.eu" style="color: #B8471A;">undemaorientez.eu</a>.
+          </p>
         </mj-text>
       </mj-column>
     </mj-section>
