@@ -26,6 +26,9 @@ class Command(BaseCommand):
                 live=False,
             )
             home.add_child(instance=event)
+            event.save_revision()
+
+            self.stdout.write(self.style.SUCCESS(f"Imported event: {event!r}"))
 
     def get_events(self):
         from oscraper.scraper.extract import extract_events
