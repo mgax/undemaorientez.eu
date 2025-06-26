@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Află când se anunță concursuri de orientare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #222222;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #656565;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            background-color: #ffffff;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #007C89;
+        }
+
+        input[type="submit"] {
+            background-color: #007C89;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #006064;
+        }
+
+        @media (min-width: 480px) {
+            .signup-form {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            input[type="email"] {
+                flex: 1;
+                max-width: 300px;
+                margin-right: 10px;
+            }
+
+            input[type="submit"] {
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="orienteering-image.jpg" alt="Orienteering in forest" class="hero-image">
+        <h1>Află când se anunță concursuri de orientare.</h1>
+        <p>Înscrie-te cu adresa de e-mail și vei primi un mesaj de fiecare dată când un concurs nou este postat pe site-ul orienteering.ro.</p>
+
+        <form class="signup-form" action="https://chimpstatic.com/mcjs-connected/js/users/2169e2491a2d5444ba747c226/7a160f207329751e541aba31e.js" method="post">
+            <input type="email" name="EMAIL" placeholder="Adresa de email" required>
+            <input type="submit" value="Înscrie-te">
+            <input type="hidden" name="u" value="2169e2491a2d5444ba747c226">
+            <input type="hidden" name="id" value="7a160f207329751e541aba31e">
+        </form>
+    </div>
+</body>
+</html>
