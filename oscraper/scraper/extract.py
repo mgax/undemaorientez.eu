@@ -125,6 +125,16 @@ def extract_events(html_content: str) -> List[Dict[str, str]]:
             logger.debug("Skipping paragraph %d: Empty after removing links", i)
             continue
 
+        # Pre-filter: skip paragraphs that don't contain a date pattern
+        if not re.search(r"\d{1,2}[.-]\d{1,2}\.20\d{2}", text):
+            logger.debug("Skipping paragraph %d: No date pattern found: %r", i, text)
+            continue
+
+        # Also check for event structure (parentheses)
+        if not re.search(r"\(.*\)", text):
+            logger.debug("Skipping paragraph %d: No event structure found: %r", i, text)
+            continue
+
         # Stop at paragraphs starting with underscore
         if text.startswith("_"):
             logger.debug("Stopping at paragraph %d", i)
