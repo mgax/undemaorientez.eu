@@ -65,18 +65,28 @@ def parse_event_text(text: str) -> Dict[str, Optional[str]]:
     # Remove WRE part for further parsing
     text_without_wre = re.sub(r"\s*\d+\s*WRE\s*", "", text)
 
-    # Extract the main parts using regex
-    # First try with location
-    match = re.match(r"(.*?)\s*\((.*?),\s*(.*?),\s*(.*?)\)", text_without_wre)
-    if match:
-        name, location, organiser, date_str = match.groups()
-    else:
-        # Try without location
-        match = re.match(r"(.*?)\s*\((.*?),\s*(.*?)\)", text_without_wre)
-        if not match:
-            raise ValueError(f"Text doesn't match expected format: {text}")
-        name, organiser, date_str = match.groups()
+    # Extract the main parts using regex: <event_name> ([<location>,] <organiser>, <date>)
+    paren_match = re.search(r"(.*?)\s*\((.*)\)", text_without_wre)
+    if not paren_match:
+        raise ValueError(f"Text doesn't match expected format: {text}")
+
+    name = paren_match.group(1).strip()
+    paren_content = paren_match.group(2)
+
+    # Split by comma from the right with maximum 2 splits (3 results max)
+    parts = [part.strip() for part in paren_content.rsplit(",", 2)]
+
+    if len(parts) == 3:
+        # location, organiser, date
+        location, organiser, date_str = parts
+    elif len(parts) == 2:
+        # organiser, date (no location)
         location = None
+        organiser, date_str = parts
+    else:
+        raise ValueError(
+            f"Expected 2 or 3 comma-separated parts in parentheses, got {len(parts)}: {paren_content}"
+        )
 
     if not date_str or not date_str.strip():
         raise ValueError(f"No date interval found in event text: {text}")
