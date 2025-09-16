@@ -38,5 +38,5 @@ class Command(BaseCommand):
 
         path = Path(urlparse(settings.EVENTS_URL).path.lstrip("/"))
         file_path = Path(settings.SCRAPER_REPO_PATH) / path
-        content = file_path.read_text(encoding="iso-8859-1")
+        content = file_path.read_text(encoding="utf-8")
         return extract_events(content)

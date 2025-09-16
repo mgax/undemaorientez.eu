@@ -34,6 +34,6 @@ class Command(BaseCommand):
         self.stdout.write("Extracting events...")
         path = Path(urlparse(settings.EVENTS_URL).path.lstrip("/"))
         file_path = Path(settings.SCRAPER_REPO_PATH) / path
-        content = file_path.read_text(encoding="iso-8859-1")
+        content = file_path.read_text(encoding="utf-8")
         events = extract_events(content)
         self.stdout.write(json.dumps(events, indent=2))
